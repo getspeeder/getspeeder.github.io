@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Czy wśród badanych krajów znalazł się Izrael?</pytanie>
+    <odp_a>tak</odp_a>
+    <odp_b>nie</odp_b>
+    <odp_c>nie wiem</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Który z krajów najbardziej jednomyślnie poparł konieczność natychmiastowej walki z ociepleniem?</pytanie>
+    <odp_a>Australia</odp_a>
+    <odp_b>USA</odp_b>
+    <odp_c>Filipiny</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Która z organizacji przeprowadziła badania w Polsce?</pytanie>
+    <odp_a>OBOP</odp_a>
+    <odp_b>Gemius SA</odp_b>
+    <odp_c>CBOS</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie3>
+</xmlini>

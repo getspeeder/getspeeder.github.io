@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jakim europejskim mieście zamalowano legendarne graffiti?</pytanie>
+    <odp_a>w Paryżu</odp_a>
+    <odp_b>w Londynie</odp_b>
+    <odp_c>w Budapeszcie</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jakim filmem było zainspirowane ścienne malowidło?</pytanie>
+    <odp_a>&quot;Grease&quot;</odp_a>
+    <odp_b>&quot;Kill Bill&quot;</odp_b>
+    <odp_c>&quot;Pulp Fiction&quot;</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaki napis wymalowano sprayem na miejscu legendarnego dzieła?</pytanie>
+    <odp_a>&quot;Come back&quot;</odp_a>
+    <odp_b>&quot;Good bye&quot;</odp_b>
+    <odp_c>&quot;We are sorry&quot;</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

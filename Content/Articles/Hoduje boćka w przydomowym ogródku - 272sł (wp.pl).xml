@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Jakie jest ulubione pożywienie bociana?</pytanie>
+    <odp_a>ryby</odp_a>
+    <odp_b>myszy</odp_b>
+    <odp_c>żaby</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Czy w obejściu oprócz bociana znajdują się także bażanty?</pytanie>
+    <odp_a>tak</odp_a>
+    <odp_b>nie</odp_b>
+    <odp_c>nie wiem</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Ile kosztowałaby operacja przywracająca bocianowi możliwość latania?</pytanie>
+    <odp_a>1000 zł</odp_a>
+    <odp_b>1500 zł</odp_b>
+    <odp_c>3000 zł</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie3>
+</xmlini>

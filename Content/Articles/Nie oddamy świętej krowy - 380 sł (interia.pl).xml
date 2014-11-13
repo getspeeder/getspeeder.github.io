@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Dlaczego rządowi weterynarze chcieli uśpić byka Shambo?</pytanie>
+    <odp_a>był już bardzo stary</odp_a>
+    <odp_b>wykryto u niego gruźlice</odp_b>
+    <odp_c>wykryto u niego  BSE</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Kto nie zgadza się na pozostawienie byka przy życiu?</pytanie>
+    <odp_a>lokalni farmerzy</odp_a>
+    <odp_b>Parita Pracy z okręgu Hendon</odp_b>
+    <odp_c>mnisi z klasztoru Skanda Vale Temple</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Kto jest głównym nosicielem gruźlicy w świecie zwierząt?</pytanie>
+    <odp_a>borsuk</odp_a>
+    <odp_b>kuna</odp_b>
+    <odp_c>szop</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

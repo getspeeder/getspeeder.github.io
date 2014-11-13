@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Ile warte jest 100 reali (brazylijska waluta)?</pytanie>
+    <odp_a>20 dolarów</odp_a>
+    <odp_b>30 dolarów</odp_b>
+    <odp_c>50 dolarów</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jak nazywała się firma aukcyjna, która zamieściła ogłoszenie?</pytanie>
+    <odp_a>Mercado Livre</odp_a>
+    <odp_b>Estado</odp_b>
+    <odp_c>Breno</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaki urząd nakazał usunąć ogłoszenie:</pytanie>
+    <odp_a>Urząd do spraw kobiet</odp_a>
+    <odp_b>Urząd miasta</odp_b>
+    <odp_c>Urząd pracy</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

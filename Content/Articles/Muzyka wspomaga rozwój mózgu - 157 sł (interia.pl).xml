@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W rozwoju jakich umiejętności pomagają lekcje muzyki?</pytanie>
+    <odp_a>logicznego myślenia</odp_a>
+    <odp_b>spostrzegawczości</odp_b>
+    <odp_c>zdolności językowych</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Na jakiej grupie dorosłych osób przeprowadzono badania?</pytanie>
+    <odp_a>20</odp_a>
+    <odp_b>200</odp_b>
+    <odp_c>2000</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Na czym polegało zadanie badanych osób?</pytanie>
+    <odp_a>na rozróżnieniu podobnych chińskich słów</odp_a>
+    <odp_b>na rozróżnieniu odmiennych intonacji tego samego chińskiego słowa</odp_b>
+    <odp_c>na rozróżnieniu odmiennych intonacji tego samego japońskiego słowa</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie3>
+</xmlini>

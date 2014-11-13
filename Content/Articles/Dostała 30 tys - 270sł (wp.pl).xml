@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jakich dniach odbywał się konkurs?</pytanie>
+    <odp_a>W piątek</odp_a>
+    <odp_b>W piątek i sobotę</odp_b>
+    <odp_c>W sobotę  i niedzielę</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Ile osób z kilkuset zgłoszonych zostało po selekcji wybranych do konkursu?</pytanie>
+    <odp_a>2</odp_a>
+    <odp_b>3</odp_b>
+    <odp_c>4</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Kto był organizatorem konkursu?</pytanie>
+    <odp_a>Centrum Handlowe M1 i UPC</odp_a>
+    <odp_b>Centrum Handlowe M1 i Radio Wawa</odp_b>
+    <odp_c>Radio Wawa i UPC</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie3>
+</xmlini>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jakim kraju doszło do opisywanego zdarzenia?</pytanie>
+    <odp_a>We Francji</odp_a>
+    <odp_b>W Szwecji</odp_b>
+    <odp_c>W Norwegii</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Kto wyciągnął wandali z windy?</pytanie>
+    <odp_a>zaalarmowani strażnicy</odp_a>
+    <odp_b>straż pożarna</odp_b>
+    <odp_c>pogotowie techniczne</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaki będzie koszt naprawy windy?</pytanie>
+    <odp_a>ok. 100 tys. koron norweskich</odp_a>
+    <odp_b>ok. 10 tys. koron norweskich</odp_b>
+    <odp_c>ok. 20 tys. koron norweskich</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

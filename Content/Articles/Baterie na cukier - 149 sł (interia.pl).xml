@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Jaka ciecz może być wykorzystana do rozpuszczenia cukru wykorzystywanego w ogniwie?</pytanie>
+    <odp_a>tylko woda</odp_a>
+    <odp_b>tylko rozpuszczalnik</odp_b>
+    <odp_c>dowolna ciecz</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jak dwutlenek węgla wpływa na reakcje chemiczne zachodzące w ogniwach na cukier?</pytanie>
+    <odp_a>spowalnia reakcje</odp_a>
+    <odp_b>przyspiesza reakcje</odp_b>
+    <odp_c>nie ma wpływu na reakcje</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaka będzie wydajność cukrowych ogniw?</pytanie>
+    <odp_a>wyższa niż dotychczasowych</odp_a>
+    <odp_b>niższa niż dotychczasowych</odp_b>
+    <odp_c>porównywalna do dotychczasowych</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

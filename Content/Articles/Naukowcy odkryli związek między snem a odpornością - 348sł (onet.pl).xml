@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Ile godzin w ciągu doby trwa aktywność zdrowych muszek owocowych?</pytanie>
+    <odp_a>12</odp_a>
+    <odp_b>10</odp_b>
+    <odp_c>8</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jak nazywały się geny, których mutacje powodowały zaburzenia snu muszek?</pytanie>
+    <odp_a>timeless, period</odp_a>
+    <odp_b>sleepless, timekeeper</odp_b>
+    <odp_c>nap, insomnia</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jakie dolegliwości powodowała mutacja genu u muszek?</pytanie>
+    <odp_a>muszki były podatne na infekcjie i żyły 2-4 razy krócej</odp_a>
+    <odp_b>muszki wykazywały nadmierną aktywność w ciągu doby</odp_b>
+    <odp_c>muszki przesypiały prawie całą dobę</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

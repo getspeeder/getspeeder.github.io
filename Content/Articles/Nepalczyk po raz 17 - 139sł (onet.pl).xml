@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Który raz Appa wszedł na szczyt Mount Everestu?</pytanie>
+    <odp_a>13</odp_a>
+    <odp_b>14</odp_b>
+    <odp_c>17</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jaki był cel akcji w ramach krótej zorganizowano &quot;Ekspedycję Superszerpów&quot;?</pytanie>
+    <odp_a>zbiórka środków na popularyzację wspinaczki wysokogórskiej</odp_a>
+    <odp_b>zebranie pieniędzy na naukę i ochronę zdrowia dzieci nepalskich przewodników górskich</odp_b>
+    <odp_c>ukazanie problemów dotykających rodziny tragicznie zmarłych przewodników górskich</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Ilu himalaistów zdobyło do tej pory Mount Everest?</pytanie>
+    <odp_a>ok. 1200</odp_a>
+    <odp_b>ok. 2000</odp_b>
+    <odp_c>175</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

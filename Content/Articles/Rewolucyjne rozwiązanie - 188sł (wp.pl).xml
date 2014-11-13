@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Kartą zbliżeniową będzie można płacić za zakupy o wartości:</pytanie>
+    <odp_a>poniżej 10 funtów szterlingów</odp_a>
+    <odp_b>poniżej 20 funtów szterlingów</odp_b>
+    <odp_c>powyżej 1 funta szterlinga</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Czy przy płaceniu kartą konieczne będzie podawanie numeru PIN:</pytanie>
+    <odp_a>tak, zawsze</odp_a>
+    <odp_b>tylko sporadycznie w ramach kontroli</odp_b>
+    <odp_c>nie</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Za jaką usługę londyńczycy płacili już wcześniej podobną kartą zbliżeniową?</pytanie>
+    <odp_a>za postój samochodu w strefach płatnego parkowania</odp_a>
+    <odp_b>za przejazdy środkami komunikacji miejskiej</odp_b>
+    <odp_c>za paliwo na stacjach benzynowych</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie3>
+</xmlini>

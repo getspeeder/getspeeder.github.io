@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jaki sposób badano zachowania żólwi?</pytanie>
+    <odp_a>obserwowano je poprzez kamery umieszczone niedaleko miejsca ich zimowania</odp_a>
+    <odp_b>żólwie wyposażono w nadajniki radiowe</odp_b>
+    <odp_c>grupa naukowców samodzielnie śledziła żółwie w czasie ich aktywności</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Gdzie żółwie spędzają zimę?</pytanie>
+    <odp_a>w wodzie blisko dna zbiornika</odp_a>
+    <odp_b>pod warstwą gęstej trawy blisko zbiorników wodnych</odp_b>
+    <odp_c>zagrzebują się w mule</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaką wagę może osiągać występujący w Polsce gatunek żółwia błotnego?</pytanie>
+    <odp_a>do 1 kg</odp_a>
+    <odp_b>1 - 1,5 kg</odp_b>
+    <odp_c>1,5 - 2 kg</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

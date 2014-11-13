@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Naukowcy z którego uniwersytetu ostrzegają przed negatywnymi skutkami grania w gry komputerowe?</pytanie>
+    <odp_a>Uniwersytetu w Rochester</odp_a>
+    <odp_b>Uniwersytetu w Monachium</odp_b>
+    <odp_c>Uniwersytetu w Waszyngtonie</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jakie zdolności rozwijają się u osób grających w &quot;strzelanki&quot;?</pytanie>
+    <odp_a>spostrzegawczość i orientacja przestrzenna</odp_a>
+    <odp_b>refleks i umiejętność pracy w zespole</odp_b>
+    <odp_c>szybkość reakcji i koordynację ruchów</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jakie zachowania gracza grającego w gry rajdowe przenoszą się do życia codziennego?</pytanie>
+    <odp_a>agresywna jazda i brak poszanowania dla przepisów drogowych</odp_a>
+    <odp_b>zwiększona koncentracja podczas jazdy autem</odp_b>
+    <odp_c>nerwowość podczas kierowania pojazdem</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

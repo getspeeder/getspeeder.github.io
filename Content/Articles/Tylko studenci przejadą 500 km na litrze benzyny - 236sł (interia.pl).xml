@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jakim kraju odbędzie się Shell Eco-marathon?</pytanie>
+    <odp_a>W Wielkiej Brytanii</odp_a>
+    <odp_b>We Francji</odp_b>
+    <odp_c>W Polsce</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jaką nazwę otrzymał wehikuł skonstruowany przez studentów Politechniki Warszawskiej?</pytanie>
+    <odp_a>kropla</odp_a>
+    <odp_b>eco-friend</odp_b>
+    <odp_c>mouse</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Do kogo należy rekord odległości w zawodach Shell Eco-marathon?</pytanie>
+    <odp_a>do Francuzów</odp_a>
+    <odp_b>do Włochów</odp_b>
+    <odp_c>do Polaków</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

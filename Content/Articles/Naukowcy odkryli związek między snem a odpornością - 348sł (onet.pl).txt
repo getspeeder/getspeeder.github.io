@@ -1,0 +1,15 @@
+Naukowcy odkryli związek między snem a odpornością
+Układ odpornościowy jest ściśle powiązany z zegarem biologicznym, regulującym nasz rytm aktywności i zapadania w sen - wynika z artykułu na łamach pisma "Current Biology". Jak wykazali naukowcy amerykańscy, infekcja bakteryjna zaburza sen muszek owocowych i odwrotnie - problemy ze snem zwiększają podatność tych owadów na infekcje.
+Z obserwacji wynika, że po kilku źle przespanych nocach nasza odporność na choroby może spadać. Jednak do tej pory naukowcom nie udało się wyjaśnić biologicznego podłoża tego zjawiska.
+
+Pierwszy krok na tej drodze uczynili teraz badacze z Uniwersytetu Stanforda, którzy prowadzili doświadczenia na muszkach owocowych.
+ 
+Najpierw zaobserwowali, że owady zarażone bakteriami Streptococcus pneumoniae lub Listeria monocytogenes spały gorzej i krócej niż muszki zdrowe. Normalnie zdrowe muszki są przez 12 godzin na dobę bardzo aktywne, w ciągu pozostałych 12 godzin ich aktywność spada i wtedy właśnie zasypiają. Jednak pod wpływem infekcji dobowy rytm aktywności owadów, znajdujący się pod kontrolą zegara biologicznego, ulegał zaburzeniu.
+
+Aby sprawdzić, czy zakłócenia snu mogą obniżają odporność muszek, naukowcy przebadali owady, które miały mutację w jednym z dwóch genów regulujących okołodobowy rytm aktywności i zapadania w sen (czyli genów zegara biologicznego). Były to geny "timeless" (ponadczasowy) oraz "period" (okres). Mutacja powodowała, że traciły one swą aktywność, przez co u owadów dochodziło do zaburzeń snu.
+
+Okazało się, że muszki z mutacją w jednym z tych genów były znacznie bardziej podatne na infekcje, niż owady niezmienione i żyły od nich 2 do 4 razy krócej.
+
+Zdaniem autorów artykułu, odkrycie to wskazuje, że między układem odpornościowym i zegarem biologicznym zachodzi przepływ informacji. Na razie nie wiadomo, w jaki sposób wewnętrzny zegar odbiera sygnały o infekcji w organizmie, ani na jakiej zasadzie układ odpornościowy "czuje", że organizm ma za mało snu.
+
+Badacze liczą jednak, że przyszłe badania na muszkach z uszkodzeniami w innych genach zegara biologicznego pomogą im lepiej zrozumieć tę zagadkę. Wyrażają też nadzieję, że ich najnowsza praca zainspiruje naukowców prowadzących doświadczenia na zwierzętach kręgowych do zgłębiania związku między snem a odpornością. Jak podkreślają, znacznym ułatwieniem może tu być fakt, że odpowiedniki genów "timeless" i "period" są obecne u zwierząt wyższych, również u człowieka.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Kto powinien wziąć na siebie ciężar pomocy pierwszym ofiarom ocieplenia klimatu?</pytanie>
+    <odp_a>wszystkie państwa</odp_a>
+    <odp_b>najbogatsze państwa Europy i Ameryki</odp_b>
+    <odp_c>kraje emitujące największą ilość gazów cieplarnianych</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Co wg naukowców stanie się przyczyną nowych konfliktów?</pytanie>
+    <odp_a>chęć przejęcia kurczących się zasobów wody</odp_a>
+    <odp_b>migracje ludności</odp_b>
+    <odp_c>walka o żywność związana ze spadkiem plonów w niektórych miejscach świata</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaka część populacji może zamieszkiwać w 2080 roku tereny ubogie w wodę?</pytanie>
+    <odp_a>1/3</odp_a>
+    <odp_b>1/2</odp_b>
+    <odp_c>2/3</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

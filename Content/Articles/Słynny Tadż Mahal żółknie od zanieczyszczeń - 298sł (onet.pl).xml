@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Jaki kolor miałyby ściany mauzoleum gdyby nie żółtawy odcień zanieczyszczeń?</pytanie>
+    <odp_a>błękitny</odp_a>
+    <odp_b>biały</odp_b>
+    <odp_c>szary</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jak wysokie jest stężenie dwutlenkiem siarki i tlenkiem azotu w Agrze?</pytanie>
+    <odp_a>w granicach normy</odp_a>
+    <odp_b>2-krotnie przekracza dopuszalne normy</odp_b>
+    <odp_c>5-krotnie przekracza dopuszczalne normy</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>W jaki sposób indyjscy konserwatorzy odtworzyli skład błota z Multan?</pytanie>
+    <odp_a>na podstawie tradycji ustnej</odp_a>
+    <odp_b>na podstawie zapisków ukrytych w świątyni</odp_b>
+    <odp_c>na podstawie badań próbek pobranych ze ścian świątyni</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

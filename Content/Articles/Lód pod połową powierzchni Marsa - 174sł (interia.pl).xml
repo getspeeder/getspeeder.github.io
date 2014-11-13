@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Skąd pochodzą dane, na podstawie których można było określić ilość lodu na marsie?</pytanie>
+    <odp_a>z orbitera Mars Odyssey</odp_a>
+    <odp_b>z lądownika umieszczonego na powierzchni Czerwonej Planety</odp_b>
+    <odp_c>z obserwacji teleskopu astronomicznego VLT</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jaka część powierzchni marsa może kryć lód pod powierzchnią?</pytanie>
+    <odp_a>ok. 10% powierzchni</odp_a>
+    <odp_b>1/3 do połowy powierzchni</odp_b>
+    <odp_c>ponad połowa powierzchni</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Na czym będzie polegała metoda badania powierzchni Marsa podczas misji pojazdu badawczego Phoenix Mars?</pytanie>
+    <odp_a>na porównywaniu sezonowych zmian emitowanego widma w podczerwieni przez dany obszar</odp_a>
+    <odp_b>na analizie danych spektrometru znajdującego się na pokładzie pojazdu</odp_b>
+    <odp_c>na wykonaniu wierceń powierzchni Marsa</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie3>
+</xmlini>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Kto znalazł historyczny but?</pytanie>
+    <odp_a>studenci podczas wyprawy naukowej</odp_a>
+    <odp_b>turysta wędrujący po lodowcu</odp_b>
+    <odp_c>grupa nastolatków podczas wyprawy w góry</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Dlaczego znaleziony but jest wyjątkowy?</pytanie>
+    <odp_a>jest najstarszym takim wyrobem znalezionym w Norwegii</odp_a>
+    <odp_b>jest najstarszym takim wyrobem znalezionym w Europie</odp_b>
+    <odp_c>jest najstarszym takim wyrobem znalezionym na Świecie</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Co powinien zrobić turysta znajdujący historyczny przedmiot w lodowcu?</pytanie>
+    <odp_a>pozostawić go na miejscu</odp_a>
+    <odp_b>przekazać go najbliższemu muzeum</odp_b>
+    <odp_c>przekazać go Uniwersytetowi w Oslo</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

@@ -1,0 +1,10 @@
+Nietoperze latają inaczej
+
+Nietoperze latają i manewrują zupełnie inaczej niż ptaki i wcale nie tak, jak się wydawało aerodynamikom - wynika z badań opublikowanych na łamach "Science." 
+Nowe badania nad lotem nietoperzy przeprowadził zespół naukowców z uniwersytetów w Lund (Szwecja) oraz Monachium i Bielefeld w Niemczech, kierowany przez inżyniera Geoffreya Speddinga z University of Southern California.
+
+Przedmiotem badań były małe nietoperze, ważące od 10 do 30 gramów, ze skrzydłami o rozpiętości 25-30 centymetrów - na przykład gatunek Glossophaga soricina. 
+
+Nietoperze wyewoluowały zupełnie niezależnie od ptaków. Stąd specyficzny przepływ powietrza, związany z uderzeniami skrzydeł nietoperzy. Ma on związek z błoniastą budową skrzydeł, rozpiętych na ogromnie wydłużonych kościach palców. Błona musi zachowywać określone napięcie. Nietoperz nie może za bardzo złożyć skrzydeł, bo straciłby siłę nośną - dlatego uderzając skrzydłami, w odpowiedni sposób je skręca.
+
+Nietoperze stanowią około 20 procent wszystkich gatunków ssaków. Większość z nich żywi się latającymi owadami, zjadając ich co noc tyle, ile same ważą. Potrafią zlokalizować zdobycz za pomocą ultradźwięków, a wyjątkowa zdolność do manewrowania sprawia, że rzadko który owad zdoła im umknąć. Te umiejętności czynią z nietoperzy wzór dla inżynierów, próbujących opracować małe, latające roboty.

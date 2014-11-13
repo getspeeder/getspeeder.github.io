@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jakich latach doszło do wycofania sił komunistycznych pod naporem Kuomintangu?</pytanie>
+    <odp_a>1934-1935</odp_a>
+    <odp_b>1940-1943</odp_b>
+    <odp_c>1945-1946</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jakie dania podawane są w pociągowej restauracji?</pytanie>
+    <odp_a>ulubione dania Mao Zedonga</odp_a>
+    <odp_b>dania z ryb będące najczęstszym pokarmem ówczesnych żołnierzy</odp_b>
+    <odp_c>skromne dania na bazie ryżu i dyni</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaką nazwę nosi Armia Czerwona po zmianie w 1947r. ?</pytanie>
+    <odp_a>Armia Narodowo-Wyzwoleńcza</odp_a>
+    <odp_b>Chińska Armia Narodowa</odp_b>
+    <odp_c>Chińska Armia Ludowo-Wyzwoleńcza</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie3>
+</xmlini>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Naukowcy z którego kraju wykonali badania dotyczące sposobów ochrony skóry?</pytanie>
+    <odp_a>z Szwecji</odp_a>
+    <odp_b>z Szwajcarii</odp_b>
+    <odp_c>z Francji</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jaki jest najmniej skuteczny sposób ochrony skóry przed światłem słonecznym?</pytanie>
+    <odp_a>kremy z filtrem</odp_a>
+    <odp_b>ubrania z cienkich tkanin</odp_b>
+    <odp_c>mokre ubrania</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jaki sposób ochrony wybierze większość ludzi?</pytanie>
+    <odp_a>unikanie przebywania w pełnym świetle słońca</odp_a>
+    <odp_b>kremy ochronne</odp_b>
+    <odp_c>ubrania okrywające całe ciało</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie3>
+</xmlini>

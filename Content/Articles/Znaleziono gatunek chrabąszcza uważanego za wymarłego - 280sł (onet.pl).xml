@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Naukowiec z której polskiej uczelni dokonał odkrycia?</pytanie>
+    <odp_a>Uniwersytetu Jagiellońskiego</odp_a>
+    <odp_b>Uniwersytetu Gdańskiego</odp_b>
+    <odp_c>Akademii Pomorskiej</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Czym wyróżnia się znaleziony chrabąszcz?</pytanie>
+    <odp_a>to jeden z największych chrabąszczy w środkowoeuropejskiej faunie</odp_a>
+    <odp_b>to największy chrabąszcz na świecie</odp_b>
+    <odp_c>to najmniejszy chrabąszcz na świecie</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Czemu znaleziony owad zawdzięcza swoją nazwę?</pytanie>
+    <odp_a>charakterystycznemu zapachowi</odp_a>
+    <odp_b>wielkiemu rozmiarowi</odp_b>
+    <odp_c>nazwisku odkrywcy</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

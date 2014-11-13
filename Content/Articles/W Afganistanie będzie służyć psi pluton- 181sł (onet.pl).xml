@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Na misję w jakim państwie pojadą wojskowe owczarki i labradorka?</pytanie>
+    <odp_a>w Iraku</odp_a>
+    <odp_b>w Afganistanie</odp_b>
+    <odp_c>w Kosowie</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Do jakich celów będą służyć szkolone psy?</pytanie>
+    <odp_a>jako służba wartownicza</odp_a>
+    <odp_b>do wykrywania ładunków wybuchowych</odp_b>
+    <odp_c>do wykrywania niedozwolonych substancji chemicznych</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Gdzie będą szkolone psy?</pytanie>
+    <odp_a>na poligonach</odp_a>
+    <odp_b>w policyjnych ośrodkach szkolenia psów</odp_b>
+    <odp_c>w nowootwartym ośrodku pod Wrocławiem przeznaczonym specjalnie do tego celu</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

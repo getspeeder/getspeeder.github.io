@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jakim stanie są odnalezione trumny i grobowiec?</pytanie>
+    <odp_a>trumny i grobowiec są w bardzo dobrym stanie</odp_a>
+    <odp_b>wystąpiły poważne uszkodzenia grobowca, jednak trumny są w dobrym stanie</odp_b>
+    <odp_c>trumny zostały poważnie uszkodzone, a grobowiec całkowicie zniszczony</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jakie zagadki postawiło przed naukowcami znalezisko?</pytanie>
+    <odp_a>wiek wielu przedmiotów jest bardzo trudny do oszacowania</odp_a>
+    <odp_b>nieznany jest właściciel skarbu, oraz pochodzenie niektórych przedmiotów</odp_b>
+    <odp_c>zagadkowa jest obecność przedmiotów z okresu nowo babilońskiego</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Jakie zwięrzęta zostały przedstawione w tekście jako temat zdobień starożytnych przedmiotów?</pytanie>
+    <odp_a>jeleń i ryba</odp_a>
+    <odp_b>sokół i tygrys</odp_b>
+    <odp_c>lew i wilk</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

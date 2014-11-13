@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>W jakiej odległości od Aten leży miasto Argos na Peloponezie?</pytanie>
+    <odp_a>60 km</odp_a>
+    <odp_b>140 km</odp_b>
+    <odp_c>170 km</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Z czego wykonana była urna, w której znaleziono tkaninę?</pytanie>
+    <odp_a>z miedzi</odp_a>
+    <odp_b>z ołowiu</odp_b>
+    <odp_c>z kamienia</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Ile z sześciu badanych grobów zawierało urnę ze szczątkami po kremacji?</pytanie>
+    <odp_a>1</odp_a>
+    <odp_b>2</odp_b>
+    <odp_c>3</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

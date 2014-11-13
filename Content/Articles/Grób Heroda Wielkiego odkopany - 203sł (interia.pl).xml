@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Jak nazywał się dziennik, który ogłosił  informacje o odkryciu naukowców?</pytanie>
+    <odp_a>Haaretz</odp_a>
+    <odp_b>Knesset</odp_b>
+    <odp_c>Tazaar</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jaka uczelnia podała informacje o sukcesie swoich naukowców?</pytanie>
+    <odp_a>Uniwersytet Hebrajski</odp_a>
+    <odp_b>Jerusalem College of Technology</odp_b>
+    <odp_c>Al-Quds University</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Ile lat panował Herod Wielki?</pytanie>
+    <odp_a>Od 20 do 24</odp_a>
+    <odp_b>Od 26 do 30</odp_b>
+    <odp_c>Od 34 do 40</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie3>
+</xmlini>

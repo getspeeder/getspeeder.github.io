@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Zespół naukowców z których państw przeprowadził badania dotyczące nietoperzy?</pytanie>
+    <odp_a>Z Szkocji, Niemiec i USA</odp_a>
+    <odp_b>Z Szwecji, Niemiec i USA</odp_b>
+    <odp_c>Z Szkocji, Anglii i USA</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Jaką rozpiętość miały skrzydła badanych nietoperzy?</pytanie>
+    <odp_a>15-20 cm</odp_a>
+    <odp_b>20-25 cm</odp_b>
+    <odp_c>25-30 cm</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Ile owadów zjada nietoperz w ciągu jednej nocy?</pytanie>
+    <odp_a>prawie połowę swej wagi</odp_a>
+    <odp_b>tyle ile sam waży</odp_b>
+    <odp_c>ok 2000 sztuk</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie3>
+</xmlini>

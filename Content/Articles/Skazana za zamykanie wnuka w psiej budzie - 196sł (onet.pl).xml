@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Gdzie zatrudniona była skazana kobieta?</pytanie>
+    <odp_a>w szkole</odp_a>
+    <odp_b>w więzieniu</odp_b>
+    <odp_c>w szpitalu</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Na jak długo kobieta zamykała w budzie swojego wnuka?</pytanie>
+    <odp_a>na cały dzień</odp_a>
+    <odp_b>od 8.00 do 15.00</odp_b>
+    <odp_c>od 16.00 do wieczora</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Dlaczego chłopiec nie wziął udziału w procesie?</pytanie>
+    <odp_a>nie pozwoliły mu na to względy zdrowotne</odp_a>
+    <odp_b>odmówił uczestnictwa z obawy przed babką</odp_b>
+    <odp_c>sędzia nie zezwolił na jego uczestnictwo w procesie</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie3>
+</xmlini>

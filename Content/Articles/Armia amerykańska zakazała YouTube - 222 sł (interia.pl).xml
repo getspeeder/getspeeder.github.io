@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Który urząd utworzył listę 14 zakazanych serwisów?</pytanie>
+    <odp_a>Amerykański Departament Obrony</odp_a>
+    <odp_b>Amerykański Departament Sprawiedliwości</odp_b>
+    <odp_c>Amerykański Departament Stanu</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Czy wpowadzony zakaz oznacza koniec pojawiania się w serwisach społecznościowych amerykańskich filmów z Iraku?</pytanie>
+    <odp_a>tak</odp_a>
+    <odp_b>nie, żołnierze będą mogli umieszczać tam prywatne filmy skierowane do rodzin</odp_b>
+    <odp_c>nie, będą pojawiały się materiały zamieszczane za aprobatą amerykańskiego dowództwa</odp_c>
+    <prawidlowa>c</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Czy żołnierze będą mogli korzystać z serwisów za pomocą własnych komputerów?</pytanie>
+    <odp_a>tak</odp_a>
+    <odp_b>nie </odp_b>
+    <odp_c>nie wiem</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

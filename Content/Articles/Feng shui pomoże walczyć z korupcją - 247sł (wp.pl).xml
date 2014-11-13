@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Ilu sędziów pracujących w opisanym sądzie skazano za korupcję?</pytanie>
+    <odp_a>2</odp_a>
+    <odp_b>3</odp_b>
+    <odp_c>5</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Dlaczego schody sądu nie powinny liczyć 11 stopni?</pytanie>
+    <odp_a>Liczba stopni powinna być parzysta</odp_a>
+    <odp_b>11 to liczba przynosząca pecha</odp_b>
+    <odp_c>Liczba stopni powinna być jak najmniejsza</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Czym jest feng szui?</pytanie>
+    <odp_a>Systemem harmonijnego kształtowania przestrzeni</odp_a>
+    <odp_b>Zbiorem starych, ludowych wierzeń</odp_b>
+    <odp_c>Stosunkowo młodą  dziedziną sztuki prężnie rozwijającej się w Chinach</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>

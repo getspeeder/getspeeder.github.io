@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Generator: TXMLINI 1.x -->
+<xmlini>
+  <pytanie1>
+    <pytanie>Kto ujął złodzieja autobusu?</pytanie>
+    <odp_a>policjant podczas rutynowej kontroli</odp_a>
+    <odp_b>pracownik ochrony zajezdni</odp_b>
+    <odp_c>policjant po 20-minutowym pościgu</odp_c>
+    <prawidlowa>b</prawidlowa>
+  </pytanie1>
+  <pytanie2>
+    <pytanie>Kiedy wyszło na jaw, że autobus został skradziony?</pytanie>
+    <odp_a>wieczorem, gdy dyspozytor usiłować wysłać dyżurnego kierowcę na zastępstwo</odp_a>
+    <odp_b>rano, w czasie przygotowywania pojazdów do pierwszej zmiany</odp_b>
+    <odp_c>w południe, około godziny po zniknięciu pojazdu</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie2>
+  <pytanie3>
+    <pytanie>Kto dokonał podobnej kradzieży w podwarszawskich Jankach?</pytanie>
+    <odp_a>trzech szesnastolatków</odp_a>
+    <odp_b>emerytowany kierowca mpk</odp_b>
+    <odp_c>dwóch pracowników pobliskiego skupu złomu</odp_c>
+    <prawidlowa>a</prawidlowa>
+  </pytanie3>
+</xmlini>
