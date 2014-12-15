@@ -1,0 +1,25 @@
+{
+    "Questions": [
+        {
+            "Question": "Jaki tytu³ nosi akwarela Cezanne'a?",
+            "Answer1": "\"Martwa natura z owocem\"",
+            "Answer2": "\"Martwa natura z zielonym melonem\"",
+            "Answer3": "\"Martwa natura z owocami\"",
+            "CorrectAnswer": "2"
+        },
+        {
+            "Question": "Prekursorem jakiego kierunku w sztuce by³ Cezanne?",
+            "Answer1": "kubizmu",
+            "Answer2": "impresjonizmu",
+            "Answer3": "surrealizmu",
+            "CorrectAnswer": "1"
+        },
+        {
+            "Question": "Czy na tej samej aukcji sprzedano tak¿e obrazy Picassa?",
+            "Answer1": "tak",
+            "Answer2": "nie",
+            "Answer3": "nie wiem",
+            "CorrectAnswer": "1"
+        }
+    ]
+}

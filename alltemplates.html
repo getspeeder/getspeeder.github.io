@@ -1,35 +1,483 @@
+<script id="about" type="text/html">
+    <div class="appbar-top" data-bind="template: 'appbartop'"></div>
+    <div id="dashboard-template">
+        <div class="exerciseContent">
+            <h3 data-bind="ltext: 'about'"></h3>
+            <hr />
+
+            <div>Icons made by Icon Works from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+            <br/>
+            <div>Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+        </div>
+    </div>
+    
+</script>
 <script id="appbartop" type="text/html">
-<a class="uk-navbar-brand uk-hidden-small" data-bind="click: NavigateDashboard"><img class=logo src=Images/logo125x25.png width=125 height=25></a><ul class="uk-navbar-nav uk-hidden-small"><li data-bind="css:{'uk-active': IsDashboardMenuActive}"><a data-bind="click: NavigateDashboard"><i class=uk-icon-home></i> Dashboard</a></li><li data-bind="css:{'uk-active': IsSpeedTestMenuActive}"><a data-bind="click: NavigateArticles"><i class=uk-icon-tachometer></i> Test szybkości</a></li><li data-bind="css:{'uk-active': IsExcercisesMenuActive}"><a data-bind="click: NavigateProjector"><i class=uk-icon-university></i> Ćwiczenia</a></li><li data-bind="css:{'uk-active': IsReportsMenuActive}"><a><i class=uk-icon-bar-chart></i> Raporty</a></li></ul><div class=uk-navbar-flip><ul class=uk-navbar-nav><li class=uk-parent data-uk-dropdown="{mode:'click'}"><a><i class=uk-icon-user></i> <i class=uk-icon-caret-down></i></a><div class="uk-dropdown uk-dropdown-navbar"><ul class="uk-nav uk-nav-navbar"><li class=uk-nav-header>user@email.com</li><li><a><i class="menu-icon uk-icon-cog"></i>Ustawienia</a></li><li><a><i class="menu-icon uk-icon-question-circle"></i>Pomoc</a></li><li><a data-bind="click: NavigateProjector"><i class="menu-icon uk-icon-info-circle"></i>O programie</a></li><li><a data-bind="click: NavigateArticles"><i class="menu-icon uk-icon-sign-out"></i>Wyloguj</a></li></ul></div></li></ul></div><a href=#offcanvas class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a><div class=uk-navbar-center><a class=uk-visible-small data-bind="click: NavigateDashboard"><img class=logo src=Images/logo125x25.png width=125 height=25></a></div>
-</script>
+    <a class="uk-navbar-brand uk-hidden-small" data-bind="click: NavigateDashboard"><img class="logo" src="Images/logo_white_125x25.png" width="125" height="25" /></a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li data-bind="css:{'uk-active': IsDashboardMenuActive}"><a data-bind="click: NavigateDashboard, ltext:'dashboard'"><!--<i class="uk-icon-home"></i>--> </a></li>
+        <li data-bind="css:{'uk-active': IsSpeedTestMenuActive}"><a data-bind="click: NavigateSpeedTestExercises, ltext:'speedtest'"><!--<i class="uk-icon-tachometer"></i>--></a></li>
+        <li data-bind="css:{'uk-active': IsExercisesMenuActive}"><a data-bind="click: NavigateExercises, ltext:'exercises'"><!--<i class="uk-icon-university"></i>--></a></li>
+        <li data-bind="css:{'uk-active': IsReportsMenuActive}"><a data-bind="ltext: 'reports'"><!--<i class="uk-icon-bar-chart"></i>--></a></li>
+    </ul>
+    <div class="uk-navbar-flip">
+        <!--<ul class="uk-navbar-nav">
+            <li><a data-bind="click: NavigateSettings"><i class="uk-icon-cog"></i></a></li>
+        </ul>-->
+        <ul class="uk-navbar-nav">
+                <li class="uk-parent" data-uk-dropdown="{mode:'click'}">
+                    <a>
+                        <i class="uk-icon-user"></i>
+                        <i class="uk-icon-caret-down"></i>
+                    </a>
 
+                    <div class="uk-dropdown uk-dropdown-navbar">
+                        <ul class="uk-nav uk-nav-navbar">
+                            <!--<li class="uk-nav-header">user@email.com</li>-->
+                            <li><a data-bind="click: NavigateSettings"><i class="menu-icon uk-icon-cog"></i>Ustawienia</a></li>
+                            <li><!--<a><i class="menu-icon uk-icon-question-circle"></i>Pomoc</a>--></li>
+                            <li><a data-bind="click: NavigateAbout"><i class="menu-icon uk-icon-info-circle"></i>O programie</a></li>
+                            <li><!--<a data-bind="click: NavigateArticles"><i class="menu-icon uk-icon-sign-out"></i>Wyloguj</a>--></li>
+
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+    </div>
+    <ul class="uk-navbar-nav uk-visible-small">
+        <li>
+            <a href="#offcanvas" data-uk-offcanvas><i class="uk-icon-navicon uk-icon-small"></i></a>
+        </li>
+    </ul>
+    <div class="centered">
+        <a class="uk-visible-small" data-bind="click: NavigateDashboard"><img class="logo" src="Images/logo_white_125x25.png" width="125" height="25" /></a>
+    </div>
+</script>
+<script id="appbartopexercise" type="text/html">
+    <ul class="uk-navbar-nav">
+        <li><a data-uk-modal="{target:'#pauseModal'}"><img src="Images/pause_small.png" /></a></li>
+    </ul>
+
+    <div id="pauseModal" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="centeredContentContainer">
+                <h1 data-bind ="text: $root.CurrentPageDisplayName"></h1>
+                <hr />
+                <button class="uk-button uk-button-large uk-button-primary modal-separate-button" data-bind="click: HidePauseModal, ltext: 'resume'"></button>
+                <button data-uk-modal="{target:'#instructionsModal'}" class="uk-button uk-button-large modal-separate-button" data-bind="click: KeepPaused, ltext: 'instructions'"></button>
+                <hr />
+                <button data-uk-modal="{target:'#confirmationModal'}" class="uk-button uk-button-large modal-separate-button" data-bind="click: KeepPaused, ltext: 'quit'"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="confirmationModal" class="uk-modal">
+        <div class="uk-modal-dialog uk-modal-page">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="centeredContentContainer">
+                <h1 data-bind="ltext: 'areyousure'"></h1>
+                <hr />
+                <button class="uk-button uk-button-large" data-bind="click: function(){HideConfirmationModal(), $root.NavigateDashboard()}, ltext: 'yes'"></button>
+                <button data-uk-modal="{target:'#pauseModal'}" class="uk-button uk-button-large" data-bind="click: KeepPaused, ltext: 'no'"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="instructionsModal" class="uk-modal">
+        <div class="uk-modal-dialog uk-modal-page">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="centeredContentContainer">
+                <h1 data-bind="ltext: 'instructions'"></h1>
+                <hr />
+                <div data-bind="template: InstructionsTemplateName"></div>
+                <hr />
+                <button class="uk-button uk-button-large" data-bind="click: HideInstructionsModal, ltext: 'close'"></button>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="appbartopintroduction" type="text/html">
+    <ul class="uk-navbar-nav">
+        <li><a data-bind="click: $root.GoBack"><i class="uk-icon-arrow-left"></i></a></li>
+    </ul>
+    <div class="centered">
+        <div class="appbar-text"><span data-bind="text: $root.CurrentPageDisplayName"></span></div>
+    </div>
+</script>
+<script id="articles-settings" type="text/html">
+    <div class="uk-grid" data-bind="with: ArticlesViewModel">
+        <div class="uk-width-medium-1-2">
+            <h3><span data-bind="ltext:'article-name'"></span>:</h3>
+            <table class="uk-table uk-table-striped uk-table-hover">
+                <tbody data-bind="foreach: ArticleInfos">
+                    <tr>
+                        <td class="uk-text-truncate" data-bind="text: Title, click: $parent.SetCurrentSettingsArticle"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="uk-width-medium-1-2" data-bind="if: CurrentSettingsArticle()">
+            <h3 data-bind="text: CurrentSettingsArticle().Title"></h3>
+            <div data-bind="with: CurrentSettingsArticle">
+                <form class="uk-form">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-3">
+                            <label class="uk-form-label" for="settings-article-title" data-bind="ltext: 'title', suffix:':'"></label>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <input id="settings-article-title" type="text"  data-bind="value: Title">
+                        </div>
+                    </div>
+                    <div class="uk-grid">
+                        <div class="uk-width-1-3">
+                            <label class="uk-form-label" for="settings-article-content" data-bind="ltext: 'content', suffix: ':'"></label>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <textarea id="settings-article-content" rows="10" data-bind="value: Content"></textarea>
+                        </div>
+                    </div>
+                    <!-- ko foreach: Questions()-->
+                    <div class="uk-grid">
+                        <h4><span data-bind="ltext:'question'"></span> <span data-bind="text:$index()+1"></span>:</h4>
+                    </div>
+                    <div class="uk-grid">
+                        <div class="uk-width-1-3">
+                            <label class="uk-form-label" data-bind="ltext: 'question', suffix:':'"></label>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <input type ="text" data-bind="value: Question">
+                        </div>
+                        <div class="uk-width-1-3">
+                            <label class="uk-form-label" data-bind="ltext: 'answer1', suffix:':'"></label>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <input type="text" data-bind="value: Answer1">
+                        </div>
+                        <div class="uk-width-1-3">
+                            <label class="uk-form-label" data-bind="ltext: 'answer2', suffix:':'"></label>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <input type="text" data-bind="value: Answer2">
+                        </div>
+                        <div class="uk-width-1-3">
+                            <label class="uk-form-label" data-bind="ltext: 'answer3', suffix:':'"></label>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <input type="text" data-bind="value: Answer3">
+                        </div>
+                        <div class="uk-width-1-3">
+                            <label class="uk-form-label" data-bind="ltext: 'answer4', suffix:':'"></label>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <input type="text" data-bind="value: Answer4">
+                        </div>
+                    </div>
+                    <!-- /ko-->
+                    
+            </form>
+        </div>
+    </div>
+</div>
+</script>
 <script id="articles" type="text/html">
-<div class=appbar-top data-bind="template: 'appbartop'"></div><div data-bind="with: ArticlesViewModel"><table class="uk-table uk-table-striped uk-table-hover"><thead></thead><tbody data-bind="foreach: Articles"><tr><td data-bind="text: Title, click: function() { $root.NavigateSpeedTestIntroduction(); $parent.SaveAsCurrent($data) }"></td></tr></tbody></table></div>
+    <div class="appbar-top" data-bind="template: 'appbartopintroduction'"></div>
+    <div class="exerciseContent" data-bind="with: ArticlesViewModel">
+        <h3 data-bind="ltext: 'articles'"></h3>
+        <hr />
+        <table class="uk-table uk-table-striped uk-table-hover">
+            <thead>
+                <th data-bind="ltext:'title'"></th>
+                <th data-bind="ltext:'number-of-words'"></th>
+            </thead>
+            <tbody data-bind="foreach: ArticleInfos">
+                <tr>
+                    <td class="uk-text-truncate" data-bind="text: Title, click: function() { $parent.ChooseArticle($data, $root.NavigateSpeedTestIntroduction) }"></td>
+                    <td data-bind="text: WordsCount"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </script>
-
 <script id="comprehensiontest" type="text/html">
-<div class=appbar-top data-bind="template: 'appbartop'"></div><div>Comprehension test</div>
+    <div class="appbar-top" data-bind="template: {name: 'appbartopexercise', data: SpeedTestViewModel}"></div>
+    <div data-bind="with: SpeedTestViewModel">
+        <div class="exerciseContent contentWithFooter">
+            <h2 data-bind="text: Article().Title"></h2>
+            <ul data-bind="foreach: Article().Questions">
+                <li>
+                    <span data-bind="text: Question"></span><br />
+                    a) <span data-bind="visible: IsAnswer1Chosen">x</span><span data-bind="text: Answer1, click: ChooseAnswer1"></span><br />
+                    b) <span data-bind="visible: IsAnswer2Chosen">x</span><span data-bind="text: Answer2, click: ChooseAnswer2"></span><br />
+                    c) <span data-bind="visible: IsAnswer3Chosen">x</span><span data-bind="text: Answer3, click: ChooseAnswer3"></span><br />
+                    d) <span data-bind="visible: IsAnswer4Chosen">x</span><span data-bind="text: Answer4, click: ChooseAnswer4"></span><br />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerContainer">
+        <button class="uk-button uk-button-primary uk-button-large" data-bind="click: $root.NavigateSpeedTestSummary, ltext:'comprehension-test-done'"></button>
+    </div>
 </script>
-
 <script id="countdown" type="text/html">
-<div class=countDownContainer data-bind="visible: CountdownActive"><div class=countDown><div class=countdownCircle><input class=knob data-bind="knob: KnobPercent, knobColor: Color" data-thickness=.1 data-skin=tron data-width=80 data-min=0 data-max=360 data-fgcolor=#da314b data-displayinput=false data-readonly=true></div><div class=countdownText><span data-bind="text: Count"></span></div></div></div>
-</script>
+    <div class="countDownContainer" data-bind="visible: CountdownActive">
+        <div class="countDown">
+            <div class="countdownCircle">
+                <input class="knob"
+                       data-bind="knob: KnobPercent, knobColor: Color"
+                       data-thickness=".1"
+                       data-skin="tron"
+                       data-width="80"
+                       data-min="0"
+                       data-max="360"
+                       data-fgcolor="#da314b"
+                       data-displayinput="false"
+                       data-readonly="true">
+            </div>
+            <div class="countdownText">
+                <span data-bind="text: Count"></span>
+            </div>
 
+        </div>
+    </div>
+</script>
 <script id="dashboard" type="text/html">
-<div class=appbar-top data-bind="template: 'appbartop'"></div><div id=dashboard-template>Dashboard template:<h3 data-bind="text: $data"></h3></div>
-</script>
+    <div class="appbar-top" data-bind="template: 'appbartop'"></div>
+    <div id="dashboard-template">
+        <div class="exerciseContent">
+            <h3 data-bind="ltext: 'dashboard'"></h3>
+            <hr />
 
+        </div>
+    </div>
+</script>
+<script id="exercises" type="text/html">
+    <div class="appbar-top" data-bind="template: 'appbartop'"></div>
+    <div class="exerciseContent">        
+    <div class="uk-container uk-container-center uk-text-center">
+        <div class="uk-grid uk-margin-large-top">
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link" data-bind="click: NavigateProjectorIntroduction">
+                    <div class="exercise-icon"><img src="Images/projector.png" alt="projector" width="40" height="33" /></div>
+                    <h2 data-bind="ltext: 'projector'"></h2>
+                    <p>Czytaj migawki tekstu wyświetlane w jednolitym tempie, aby zwiększyć prędkość postrzegania i ograniczyć regresję</p>
+                </a>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link">
+                    <div class="exercise-icon"><img src="Images/wordpairs.png" alt="projector" width="40" height="33" /></div>
+                    <h2 data-bind="ltext: 'word-pairs'"></h2>
+                    <p>Znajdź pary słów różniące się od siebie. Ćwiczenie poprawia szybkość spostrzegania i koncentrację.</p>
+                </a>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link">
+                    <div class="exercise-icon"><img src="Images/columns.png" alt="projector" width="40" height="33" /></div>
+                    <h2 data-bind="ltext: 'text-columns'"></h2>
+                    <p>If you're interested in discussing, participating and helping each other, the UIkit Google+ community is the place.</p>
+                </a>
+            </div>
+        </div>
+        <div class="uk-grid uk-margin-large-top">
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link" data-bind="click: NavigateProjectorIntroduction">
+                    <div class="exercise-icon"><img src="Images/pyramids.png" alt="projector" width="40" height="33" /></div>
+                    <h2 data-bind="ltext: 'word-pyramids'"></h2>
+                    <p>Follow us on Twitter and be the first to receive news and updates. We are open for your feedback and questions.</p>
+                </a>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link">
+                    <div class="exercise-icon"><img src="Images/find-numbers.png" alt="projector" width="40" height="40" /></div>
+                    <h2 data-bind="ltext: 'find-numbers'"></h2>
+                    <p>You want to take part in the development? Fork UIkit on GitHub and send us a pull request. To report a bug, file a new issue.</p>
+                </a>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link">
+                    <div class="exercise-icon"><img src="Images/find-even-numbers.png" alt="projector" width="40" height="40" /></div>
+                    <h2 data-bind="ltext: 'find-even-numbers'"></h2>
+                    <p>If you're interested in discussing, participating and helping each other, the UIkit Google+ community is the place.</p>
+                </a>
+            </div>
+        </div>
+        <div class="uk-grid uk-margin-large-top">
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link" data-bind="click: NavigateProjectorIntroduction">
+                    <div class="exercise-icon"><img src="Images/find-words.png" alt="projector" width="40" height="33" /></div>
+                    <h2 data-bind="ltext: 'find-words'"></h2>
+                    <p>Follow us on Twitter and be the first to receive news and updates. We are open for your feedback and questions.</p>
+                </a>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link">
+                    <div class="exercise-icon"><img src="Images/find-numbers.png" alt="projector" width="40" height="40" /></div>
+                    <h2 data-bind="ltext: 'find-numbers'"></h2>
+                    <p>You want to take part in the development? Fork UIkit on GitHub and send us a pull request. To report a bug, file a new issue.</p>
+                </a>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <a class="uk-panel tm-panel-link">
+                    <div class="exercise-icon"><img src="Images/find-even-numbers.png" alt="projector" width="40" height="40" /></div>
+                    <h2 data-bind="ltext: 'find-even-numbers'"></h2>
+                    <p>If you're interested in discussing, participating and helping each other, the UIkit Google+ community is the place.</p>
+                </a>
+            </div>
+        </div>
+        <!--<a class="uk-thumbnail" width="300px" height="200px" data-bind="click: NavigateProjectorIntroduction">
+            <div width="300" height="200">
+                <img src="Images/monitor_green.png" />
+            </div>
+            <div class="uk-thumbnail-caption">Projector</div>
+        </a>-->
+
+    </div>
+</script>
+<script id="general-settings" type="text/html">
+    General settings woho
+</script>
 <script id="projector" type="text/html">
-<div class=appbar-top data-bind="template: 'appbartop'"></div><div data-bind="with: ProjectorViewModel">Projector:<h3 data-bind="text: speedRateBigger"></h3><p><b>Wszyscy ludzie, którzy osiągnęli wielkie rezultaty w życiu, mieli jasną i klarowną wizję celu, tego co chcą osiągnąć. Jedną ze skutecznych technik wprowadzania w życie naszych planów, a co z tym idzie-realizacji marzeń jest myślenie zorientowane na rezultaty.</b></p><p>Rezultat jaki chcesz osiągnąć powinien być osobisty, Twój własny. Musi budzić pozytywne emocje. Jeśli to np. cel finansowy, ustal w jakim czasie chcesz go osiągnąć, jak będziesz się czuła, gdy się to uda. Pomyśl jak wchodzisz na stronę ze swoim kontem lub zaglądasz do portfela i czujesz spokój, stabilizację, a może dreszczyk emocji, gdy myślisz o zbliżających się zakupach czy wczasach. Jeśli to cel związany ze sportem lub zdrowiem, zamknij oczy i spójrz oczyma wyobraźni na siebie w wymarzonej formie, gdy osiągasz pożądaną wagę i kondycję. Poczuj całą paletę emocji, a także poczucie szczęścia i atrakcyjności jakie są z tym związane. Czy to zwiększona pewność siebie, możliwość osiągnięcia jeszcze więcej, a może po prostu zwykła radość z osiągnięcia tego, co się zamarzyło?</p><p><span id=more-36112></span></p><p>Prosta technika, a jakże skuteczna. Jeśli znamy efekt końcowy, to tak jak budowniczy z projektem domu w ręku, wiemy dokąd zmierzamy. Inaczej dążenie do celu byłoby chaotycznym, nieukierunkowanym procesem, którego efekty trudno zmierzyć, a także łatwiej o utratę motywacji podczas działania- wystarczy że ktoś nam coś powie, albo pokaże inny cel i już mniej chce się go realizować. A więc wizja rezultatu to podstawa myślenia zorientowanego na rezultaty, która sprawia że nie ulegniemy wpływom innych, dołujących osób w tym, co robimy i co chcemy osiągnąć.</p><h2>Aby osiągać cele, musisz twardo stąpać po ziemi.</h2><p>Kiedy masz cel, dąż do niego niepowstrzymanie. Łatwo jest zmotywować się do biegania, kiedy koleżanka nas zaprasza na jogging, mamy piękną leniwą niedzielę, a do tego świetny humor. Co jednak zrobić, kiedy spadnie deszcz, a do tego dostaniemy w pracy reprymendę, a nastrój mamy co najmniej kiepski?</p><p>Nie poddać się. Najtrudniej się zabrać, kiedy okoliczności nie są sprzyjające. Jednak kiedy przełamiemy się w taki ciężki dzień, mimo wszystko pójdziemy na trening, o wiele łatwiej zmotywować się do działania kiedy znów będzie ładne słońce i fajny nastrój. Zmiana wymaga pracy i zaangażowanie. Nikt nie mówił że będzie łatwo-ale na pewno będzie warto.</p><p>Gdy widzimy rezultat, jaki chcemy osiągnąć, warto przez chwilę zwizualizować go przy użyciu wszystkich zmysłów- np. jeśli jest to zwycięstwo w biegu na 15 km, Zobacz siebie gdy przekraczasz metę na pełnej prędkości, słyszysz brawa i okrzyki kibiców, czujesz jak zakładasz medal na szyję, a na koniec pijesz ulubiony napój energetyczny. Zrób z tego pełen żywych kolorów, realistyczny film- do tego będziesz dążyć. Brak celu lub mało ekscytujący cel to przyczyna problemów z motywacją. Dopiero gdy efekt końcowy będzie wymarzony, odlotowy, taki jak naprawdę chcemy- poczuj się tak, jakby to już się stało. Jakby ten cel został już osiągnięty, a Ty czujesz niewysłowioną radość i satysfakcję.</p><p>Dopiero kiedy wiemy co chcemy osiągnąć, nasz umysł ma powód, by naprawdę zmobilizować się do działania. W tym artykule przedstawiłem, jak wyznaczać cele i jak sprawić, żeby wizja ich osiągnięcia popychała nas do nowych działań i zmiany sposobu myślenia. Jak zaplanować ścieżkę do wybranego celu, a także jak dojść do tego, co naprawdę chcemy osiągnąć, wyłączając krytyczne myślenie i ograniczenia ze strony innych ludzi. Jak pozbyć się ograniczających głosów w głowie i ruszyć w kierunku wymarzonej przyszłości, bez oglądania się w na innych ludzi i zgubnego porównywania się z nimi.</p><p>Marek Olszak</p><p><a title="life coaching" href=http://twojecele.eu target=_blank>http://twojecele.eu/</a></p>artykul pochodzi z serwisu <a href="http://artykuly.marleny.pl/">www.artykuly.marleny.pl</a> style="width: 696px; height: 55px;"<div class="uk-container uk-container-center"><div class=uk-grid data-uk-grid-margin><div class=uk-width-medium-1-1><div class="uk-vertical-align uk-text-center" style="background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTEzMHB4IiBoZWlnaHQ9IjQ1MHB4IiB2aWV3Qm94PSIwIDAgMTEzMCA0NTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDExMzAgNDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIxMTMwIiBoZWlnaHQ9IjQ1MCIvPg0KPC9zdmc+DQo=') 50% 0 no-repeat; height: 450px;"><div class="uk-vertical-align-middle uk-width-1-2"><h1 class=uk-heading-large>Sample Heading</h1><p class=uk-text-large>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo.</p><p><a class="uk-button uk-button-primary uk-button-large" href=#>Button</a> <a class="uk-button uk-button-large" href=#>Button</a></p></div></div></div></div><div class=uk-grid data-uk-grid-margin><div class=uk-width-medium-1-3><div class=uk-grid><div class=uk-width-1-6><i class="uk-icon-cog uk-icon-large uk-text-primary"></i></div><div class=uk-width-5-6><h2 class=uk-h3>Sample Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div></div><div class=uk-width-medium-1-3><div class=uk-grid><div class=uk-width-1-6><i class="uk-icon-thumbs-o-up uk-icon-large uk-text-primary"></i></div><div class=uk-width-5-6><h2 class=uk-h3>Sample Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div></div><div class=uk-width-medium-1-3><div class=uk-grid><div class=uk-width-1-6><i class="uk-icon-cloud-download uk-icon-large uk-text-primary"></i></div><div class=uk-width-5-6><h2 class=uk-h3>Sample Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div></div></div><div class=uk-grid data-uk-grid-margin><div class=uk-width-medium-1-3><div class=uk-grid><div class=uk-width-1-6><i class="uk-icon-dashboard uk-icon-large uk-text-primary"></i></div><div class=uk-width-5-6><h2 class=uk-h3>Sample Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div></div><div class=uk-width-medium-1-3><div class=uk-grid><div class=uk-width-1-6><i class="uk-icon-comments uk-icon-large uk-text-primary"></i></div><div class=uk-width-5-6><h2 class=uk-h3>Sample Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div></div><div class=uk-width-medium-1-3><div class=uk-grid><div class=uk-width-1-6><i class="uk-icon-briefcase uk-icon-large uk-text-primary"></i></div><div class=uk-width-5-6><h2 class=uk-h3>Sample Heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div></div></div><hr class=uk-grid-divider><div class=uk-grid data-uk-grid-margin><div class=uk-width-medium-1-2><img width=660 height=400 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K></div><div class=uk-width-medium-1-2><h1>Heading</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><h2>Subheading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><a class="uk-button uk-button-primary" href=#>Button</a></div></div><hr class=uk-grid-divider><div class=uk-grid data-uk-grid-margin><div class=uk-width-medium-1-2><h1>Heading</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><h2>Subheading</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><a class="uk-button uk-button-primary" href=#>Button</a></div><div class=uk-width-medium-1-2><img width=660 height=400 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K></div></div><hr class=uk-grid-divider><div class=uk-grid data-uk-grid-margin><div class=uk-width-medium-1-1><div class="uk-panel uk-panel-box uk-text-center"><p><strong>Phasellus viverra nulla ut metus.</strong> Quisque rutrum etiam ultricies nisi vel augue. <a class="uk-button uk-button-primary uk-margin-left" href=#>Button</a></p></div></div></div><h1 class=uk-text-center>Our Clients</h1><div class=uk-grid data-uk-grid-margin><div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"><a class=uk-overlay href=#><img width=350 height=150 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K><div class=uk-overlay-area><div class=uk-overlay-area-content>Client Name</div></div></a></div><div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"><a class=uk-overlay href=#><img width=350 height=150 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K><div class=uk-overlay-area><div class=uk-overlay-area-content>Client Name</div></div></a></div><div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"><a class=uk-overlay href=#><img width=350 height=150 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K><div class=uk-overlay-area><div class=uk-overlay-area-content>Client Name</div></div></a></div><div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"><a class=uk-overlay href=#><img width=350 height=150 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K><div class=uk-overlay-area><div class=uk-overlay-area-content>Client Name</div></div></a></div><div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"><a class=uk-overlay href=#><img width=350 height=150 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K><div class=uk-overlay-area><div class=uk-overlay-area-content>Client Name</div></div></a></div><div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"><a class=uk-overlay href=#><img width=350 height=150 src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAzNTAgMTUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNTAgMTUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTUwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0xMzEuOTEsNDEuMXY2Ny44aDg2LjE4VjQxLjFIMTMxLjkxeiBNMjExLjE0NiwxMDEuNTQ5SDEzOS4yNlY0OC40NTFoNzEuODg3VjEwMS41NDl6Ii8+DQoJPHBvbHlnb24gZmlsbD0iI0Q4RDhEOCIgcG9pbnRzPSIxNDMuMTI5LDk1LjgzIDE1Ny45NDMsODAuMjU4IDE2My40OTQsODIuNjYgMTgxLjAwOSw2NC4wMTQgMTg3LjkwMiw3Mi4yNiAxOTEuMDE0LDcwLjM4MiANCgkJMjA3Ljg0OCw5NS44MyAJIi8+DQoJPGNpcmNsZSBmaWxsPSIjRDhEOEQ4IiBjeD0iMTYwLjI0MyIgY3k9IjYxLjk1NCIgcj0iNi40NzIiLz4NCjwvZz4NCjwvc3ZnPg0K><div class=uk-overlay-area><div class=uk-overlay-area-content>Client Name</div></div></a></div></div></div></div>
-</script>
+    <div class="appbar-top" data-bind="template: 'appbartop'"></div>
 
+    <div data-bind="with: ProjectorViewModel">
+        <div class="countdownLayer" data-bind="template: { name: 'countdown', data: Countdown }, visible: Countdown.CountdownActive"></div>
+        <div class="exerciseContent">
+            <h2 data-bind="ltext:'projector'"></h2>
+            <div class="projectorContent">
+                <span data-bind="text: textToDisplay"></span>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="projectorintroduction" type="text/html">
+    <div class="appbar-top" data-bind="template: {name: 'appbartopintroduction', data: ProjectorViewModel}"></div>
+    <div class="exerciseContent contentWithFooter centeredContentContainer">
+        <h1 class="introduction">Projektor</h1>
+        <hr/>
+        Suggested speed:
+        <br>
+        change
+        <hr/>
+
+        <h3>Instrukcja:</h3>
+
+    </div>
+    <div class="footerContainer">
+        <button class="uk-button uk-button-primary uk-button-large" data-bind="click: $root.NavigateProjector">Start</button>
+    </div>
+</script>
+<script id="settings" type="text/html">
+    <div class="appbar-top" data-bind="template: 'appbartop'"></div>
+    <div data-bind="with: SettingsViewModel">
+        <div class="exerciseContent">
+            <h3 data-bind="ltext: 'settings'"></h3>
+            <hr/>
+            <div>
+                <ul class="uk-subnav uk-subnav-pill">
+                    <li data-bind="css:{'uk-active': IsGeneralSettingsActive}"><a data-bind="click: ShowGeneralSettings, ltext: 'general'"></a></li>
+                    <li data-bind="css:{'uk-active': IsArticlesSettingsActive}"><a data-bind="click: ShowArticlesSettings, ltext: 'articles-library'"></a></li>
+                    <!--<li><a data-bind="click: ShowWordPairsSettings">Word pairs</a></li>-->
+                </ul>
+            </div>
+            <div data-bind="template: {name: currentTab(), data: $root}"></div>
+        </div>
+    </div>
+</script>
 <script id="speedtest" type="text/html">
-<div class=appbar-top data-bind="template: 'appbartop'"></div><div data-bind="with: SpeedTestViewModel"><div class=speedTestCountdown data-bind="template: { name: 'countdown', data: Countdown }, visible: Countdown.CountdownActive"></div><div class=exerciseContent><h2 data-bind="text: Title"></h2><span data-bind="text: Content"></span> <button data-bind="click: function(){Finish(); $root.NavigateComprehensionTest()}">Finish</button></div><div></div></div>
-</script>
+    <div class="appbar-top" data-bind="template: {name: 'appbartopexercise', data: SpeedTestViewModel}"></div>
 
+    <div data-bind="with: SpeedTestViewModel">
+        <div class="countdownLayer" data-bind="template: { name: 'countdown', data: Countdown }, visible: Countdown.CountdownActive"></div>
+        <div class="textContent contentWithFooter">
+            <h2 data-bind="text: Article().Title"></h2>
+            <article class="uk-article">
+                <span data-bind="html: Article().Content"></span>
+            </article>
+        </div>
+        <div class="footerContainer">
+            <button class="uk-button uk-button-primary uk-button-large" data-bind="click: function(){Finish(); $root.NavigateComprehensionTest()}, ltext:'reading-done'"></button>
+        </div>
+    </div>
+</script>
+<script id="speedtestexercises" type="text/html">
+    <div class="appbar-top" data-bind="template: 'appbartop'"></div>
+    <div class="exerciseContent centeredContentContainer">
+        <!--<h1 class="introduction" data-bind="ltext: 'speedtest'"></h1>
+            <hr />
+            <span data-bind="ltext: 'speedtest-instructions'"></span>:
+            <p class="uk-clearfix">
+                <button class="uk-button uk-button-primary uk-button-large" data-bind="click: $root.NavigateSpeedTestIntroduction, ltext:'begin-test'"></button>
+            </p>-->
+        
+        <div class="uk-grid uk-margin-large-top">
+            <div class="uk-width-medium-1-2">
+                <a class="uk-panel tm-panel-link" data-bind="click: NavigateSpeedTestIntroduction">
+                    <div class="exercise-icon"><img src="Images/comprehension.png" alt="projector" width="40" height="33" /></div>
+                    <h2 data-bind="ltext: 'speedtest-with-comprehension'"></h2>
+                    <p data-bind="ltext: 'speedtest-with-comprehension-introduction'"></p>
+                </a>
+            </div>
+
+            <!--<div class="uk-width-medium-1-2">
+                <a class="uk-panel tm-panel-link" data-bind="click: NavigateSpeedTestIntroduction">
+                    <div class="exercise-icon"><img src="Images/speedtest.png" alt="projector" width="40" height="33" /></div>
+                    <h2 data-bind="ltext: 'speedtest'"></h2>
+                    <p data-bind="ltext: 'speedtest-introduction'"></p>
+                </a>
+            </div>-->
+        </div>
+
+    </div>
+</script>
+<script id="speedtestinstructions" type="text/html">
+    <span data-bind="ltext:'speedtest-instructions-read-text'"></span>
+    <br>
+    <i class="uk-icon-arrow-down"></i>
+    <br>
+    <span data-bind="ltext:'speedtest-instructions-press-done'"></span>
+    <br>
+    <i class="uk-icon-arrow-down"></i>
+    <br>
+    <span data-bind="ltext:'speedtest-instructions-answer-questions'"></span>
+</script>
 <script id="speedtestintroduction" type="text/html">
-<div class=appbar-top><ul class="uk-navbar-nav uk-hidden-small"><li data-bind="css:{'uk-active': IsDashboardMenuActive}"><a data-bind="click: NavigateDashboard"><i class=uk-icon-home></i> Dashboard</a></li><li data-bind="css:{'uk-active': IsSpeedTestMenuActive}"><a data-bind="click: NavigateArticles"><i class=uk-icon-tachometer></i> Dupa</a></li></ul></div>speedtestintroduction page <a data-bind="click: $root.NavigateSpeedTest">go to speedtest</a>
+    <div class="appbar-top" data-bind="template: 'appbartopintroduction'"></div>
+    <div class="exerciseContent centeredContentContainer" data-bind="with: SpeedTestIntroductionViewModel">
+        <h1 class="introduction" data-bind="ltext: 'speedtest'"></h1>
+        <div class="exercise-intro-icon"><img src="Images/comprehension.png" alt="projector" width="40" height="33"></div>
+        <hr />
+        <span data-bind="ltext: 'article'"></span>:
+        <h2><a data-bind="click: $root.NavigateArticles, text: articleName"></a></h2>
+        <hr />
+        <div data-bind="template: 'speedtestinstructions'"></div>
+        <hr/>
+        <button class="uk-button uk-button-primary uk-button-large" data-bind="click: $root.NavigateSpeedTest, ltext:'start'"></button>
+    </div>
 </script>
+<script id="speedtestsummary" type="text/html">
 
-<script id="speedtestintroductionmenu" type="text/html">
-speedtestintroduction menu
+    <div class="appbar-top" data-bind="template: {name: 'appbartopexercise', data: SpeedTestViewModel}"></div>
+
+    <div data-bind="with: SpeedTestViewModel">
+        <div class="exerciseContent contentWithFooter">
+            <h1 class="introduction" data-bind="ltext: 'speed-test-summary'"></h1>
+            <h2 data-bind="text: Article().Title"></h2>
+            <br>
+           <span data-bind="ltext: 'reading-time:'"></span> <span data-bind="text: readingTime"></span>
+
+        </div>
+    </div>
+    <div class="footerContainer">
+        <button class="uk-button uk-button-primary uk-button-large" data-bind="click: $root.NavigateSpeedTestSummary">Zrobione</button>
+    </div>
+</script>
+<script id="word-pairs-settings" type="text/html">
+    <h1 class="introduction" data-bind="ltext: 'word-pairs-settings'"></h1>
 </script>
